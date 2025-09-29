@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>M</span>ahrab <span>h</span>ossen</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#skills" data-after="Skills">Skills</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+     <!-- Hero Section  -->
+    <section id="hero">
+      <!-- Background Image Slider -->
+      <div class="hero-bg-slider">
+        <div class="hero-bg-slide active"></div>
+        <div class="hero-bg-slide"></div>
+        <div class="hero-bg-slide"></div>
+        <div class="hero-bg-slide"></div>
+        <!-- Add more slides here if needed by copying: <div class="hero-bg-slide"></div> -->
+      </div>
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Mahrab Hossen <span></span></h1>
+          <a href="#projects" type="button" class="cta">Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="assets/file1.png" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Jr.Software Developer</h2>
+          <p>
+            I am a Junior PHP-Laravel Developer with experience in building
+            dynamic, data-driven web applications. Proficient in PHP and the
+            Laravel framework, I have developed personal projects that showcase
+            my ability to implement clean, efficient code and integrate APIs
+            effectively. I am committed to continuous learning and improving my
+            skills to stay updated with industry trends. I am eager to
+            contribute to a collaborative team and take on new challenges that
+            will help me grow as a developer.
+          </p>
+          <a href="assets/resume.pdf" class="cta">Download Resume</a>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <section id="projects">
+      <div class="projects container">
+        <h1 class="section-title">My <span>Projects</span></h1>
+        <div class="all-projects">
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-img">
+              <img src="assets/Job-portal.png" alt="Project 1" />
+            </div>
+            <div class="project-info">
+              <h2>Job Portal System</h2>
+              <p>
+                Role-based dashboards for Super Admin, Employer, and Candidate.
+                Features include job posting, applications, and application
+                tracking
+              </p>
+              <a href="#project1-details" class="cta">View</a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-img">
+              <img src="assets/sms1.png" alt="Project 2" />
+            </div>
+            <div class="project-info">
+              <h2>School Management System</h2>
+              <p>
+                Comprehensive system for managing student records, attendance,
+                grades, and staff information with role-based access for admins,
+                teachers, and students.
+              </p>
+              <a href="#project2-details" class="cta">View</a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-img">
+              <img src="assets/lms.png" alt="Project 3" />
+            </div>
+            <div class="project-info">
+              <h2>Development of Ecommerce,LMS</h2>
+              <p>
+                Built e-commerce and Learning Management System (LMS) platforms
+                with user-friendly interfaces, secure payment gateways, and
+                content management features.
+              </p>
+              <a href="#project3-details" class="cta">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills container">
+        <h1 class="section-title"><span>Skills</span></h1>
+        <div class="skills-list">
+          <div class="skill-item">MYSQL</div>
+          <div class="skill-item">Laravel</div>
+          <div class="skill-item">PHP</div>
+          <div class="skill-item">DSA</div>
+           <div class="skill-item">C++/PYTHON</div>
+          <div class="skill-item">GIT</div>
+          <div class="skill-item">JavaScript</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="assets/icons8-phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <!-- WhatsApp link -->
+              <h2>
+                <a href="https://wa.me/+8801950047492" target="_blank"
+                  >01950047492 (WhatsApp)</a
+                >
+              </h2>
+              <!-- Normal Phone link -->
+              <h2>01721034131</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img src="assets/icons8-email.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <!-- Email link -->
+              <h2>
+                <a href="mailto:mahrabbappy33@gmail.com"
+                  >mahrabbappy33@gmail.com</a
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img src="assets/icons8-address.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <!-- Google Maps link for address -->
+              <h2>
+                <a
+                  href="https://www.google.com/maps?q=Uttara,Dhaka,Bangladesh"
+                  target="_blank"
+                  >Uttara, Dhaka, Bangladesh</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>M</span>ahrab <span>H</span>ossen</h1>
+        </div>
+        <!-- <h2>Your Complete Web Solution</h2> -->
+        <div class="footer-tagline">Your Complete Web Solution</div>
+        <div class="footer-description">
+          Passionate about creating innovative web solutions that drive business
+          success. Let's build something amazing together and transform your
+          digital presence.
+        </div>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://www.facebook.com/mehrabhossen.bappy/">
+              <img src="assets/icons8-facebook.png" />
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.linkedin.com/in/iam-mehrab-809a1b250/">
+              <img src="assets/icons8-linkedin.png" />
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://github.com/Ami-mehrab">
+              <img src="assets/icons8-github.png" />
+            </a>
+          </div>
+        </div>
+        <p>Copyright © 2025 mahrab. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
