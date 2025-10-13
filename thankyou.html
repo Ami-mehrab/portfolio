@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Mahrab Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+    body {
+      background: linear-gradient(135deg, #dc143c 0%, #ff6b6b 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+    }
+    .form-success-message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 350px;
+      background: rgba(255,255,255,0.97);
+      color: #dc143c;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(220,20,60,0.15);
+      padding: 50px 30px;
+      max-width: 500px;
+      width: 100%;
+      animation: fadeInUp 0.7s;
+      text-align: center;
+    }
+    .form-success-message .success-icon {
+      font-size: 5rem;
+      margin-bottom: 24px;
+      color: #dc143c;
+      text-shadow: 0 2px 8px rgba(44,62,80,0.15);
+    }
+    .form-success-message h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+    .form-success-message p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .cta {
+      display: inline-block;
+      padding: 12px 35px;
+      color: white;
+      background: linear-gradient(45deg, #dc143c, #ff6b6b);
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      text-decoration: none;
+    }
+    .cta:hover {
+      background: linear-gradient(45deg, #ff6b6b, #dc143c);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+    }
+    @media (max-width: 600px) {
+      .form-success-message {
+        min-height: 180px;
+        padding: 20px 8px;
+        max-width: 95vw;
+      }
+      .form-success-message .success-icon {
+        font-size: 3rem;
+        margin-bottom: 12px;
+      }
+      .form-success-message h2 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+      }
+      .form-success-message p {
+        font-size: 1rem;
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style> -->
+</head>
+<body>
+  <div class="form-success-message">
+    <div class="success-icon">&#10004;</div>
+    <h2>Thank You!</h2>
+    <p>Your message has been sent successfully.<br>
+      I appreciate your interest and will reply soon.</p>
+    <a href="index.html" class="cta">Back to Home</a>
+  </div>
+</body>
+</html>
