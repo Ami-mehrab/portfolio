@@ -4,111 +4,210 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You - Mahrab Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* --- Google Fonts --- */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-    body {
-      background: linear-gradient(135deg, #dc143c 0%, #ff6b6b 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Poppins', 'Montserrat', sans-serif;
+    /* --- General and Reset Styles --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .form-success-message {
+
+    html {
+      font-size: 10px; /* Base font size for easy rem units */
+    }
+
+    /* --- Body & Layout --- */
+    .thankyou-body {
+      font-family: 'Poppins', sans-serif, system-ui;
+      background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+      color: #333;
       display: flex;
       flex-direction: column;
+      min-height: 100vh; /* Ensures body takes full viewport height */
+    }
+
+    main {
+      flex-grow: 1; /* Pushes footer down */
+      display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 350px;
-      background: rgba(255,255,255,0.97);
-      color: #dc143c;
-      border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(220,20,60,0.15);
-      padding: 50px 30px;
-      max-width: 500px;
-      width: 100%;
-      animation: fadeInUp 0.7s;
+      padding: 2rem;
+    }
+
+    /* --- Form Success Message Styling --- */
+    .form-success-message {
+      background-color: #ffffff;
+      padding: 4rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
+      max-width: 450px;
+      width: 100%;
+      border-top: 5px solid #28a745;
+      animation: fadeIn 0.6s ease-out;
     }
-    .form-success-message .success-icon {
-      font-size: 5rem;
-      margin-bottom: 24px;
-      color: #dc143c;
-      text-shadow: 0 2px 8px rgba(44,62,80,0.15);
-    }
-    .form-success-message h2 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-      letter-spacing: 0.05em;
-    }
-    .form-success-message p {
-      font-size: 1.3rem;
-      font-weight: 500;
-      line-height: 1.7;
-      margin-bottom: 30px;
-    }
-    .cta {
-      display: inline-block;
-      padding: 12px 35px;
-      color: white;
-      background: linear-gradient(45deg, #dc143c, #ff6b6b);
-      border: none;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      margin-top: 10px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      text-decoration: none;
-    }
-    .cta:hover {
-      background: linear-gradient(45deg, #ff6b6b, #dc143c);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
-    }
-    @media (max-width: 600px) {
-      .form-success-message {
-        min-height: 180px;
-        padding: 20px 8px;
-        max-width: 95vw;
-      }
-      .form-success-message .success-icon {
-        font-size: 3rem;
-        margin-bottom: 12px;
-      }
-      .form-success-message h2 {
-        font-size: 1.6rem;
-        margin-bottom: 8px;
-      }
-      .form-success-message p {
-        font-size: 1rem;
-      }
-    }
-    @keyframes fadeInUp {
-      0% {
+
+    @keyframes fadeIn {
+      from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(20px);
       }
-      100% {
+      to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-  </style> -->
+
+    .success-icon {
+      font-size: 5rem;
+      color: #28a745;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+
+    .form-success-message h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .form-success-message p {
+      font-size: 1.6rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .form-success-message .cta {
+      display: inline-block;
+      background: linear-gradient(45deg, #dc143c, #ff6b6b);
+      color: #ffffff;
+      padding: 1.2rem 2.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    .form-success-message .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(220, 20, 60, 0.3);
+    }
+
+    /* --- Footer Styling --- */
+    #footer {
+      width: 100%;
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: #ecf0f1;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    #footer .footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    #footer .social-icon {
+      display: flex;
+      gap: 2rem;
+    }
+
+    #footer .social-item a {
+      display: inline-block;
+    }
+
+    #footer .social-item img {
+      width: 30px;
+      height: 30px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #footer .social-item img:hover {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    #footer p {
+      font-size: 1.4rem;
+      color: #bdc3c7;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 600px) {
+      .form-success-message {
+        padding: 3rem 2.5rem;
+      }
+
+      .form-success-message h2 {
+        font-size: 2.4rem;
+      }
+      
+      .form-success-message p {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
-<body>
-  <div class="form-success-message">
-    <div class="success-icon">&#10004;</div>
-    <h2>Thank You!</h2>
-    <p>Your message has been sent successfully.<br>
-      I appreciate your interest and will reply soon.</p>
-    <a href="index.html" class="cta">Back to Home</a>
-  </div>
+<body class="thankyou-body">
+  <main>
+    <div class="form-success-message">
+      <div class="success-icon">&#10004;</div>
+      <h2>Thank You, <span id="user-name">Guest</span>!</h2>
+      <p>
+        Your message has been sent successfully.<br />
+        I appreciate your interest and will reply soon.
+      </p>
+      <a href="index.html" class="cta">Back to Home</a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer">
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/mehrabhossen.bappy/">
+            <img src="assets/icons8-facebook.png" alt="Facebook" />
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/iam-mehrab-809a1b250/">
+            <img src="assets/icons8-linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/Ami-mehrab">
+            <img src="assets/icons8-github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2025 Mahrab Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name");
+      const userNameSpan = document.getElementById("user-name");
+
+      if (name) {
+        // Sanitize the name to prevent HTML injection
+        userNameSpan.textContent = name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      }
+    });
+  </script>
 </body>
 </html>

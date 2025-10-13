@@ -1326,59 +1326,6 @@
   }
 }
 /* form success message */
-.form-success-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
-  background: linear-gradient(135deg, #dc143c 0%, #ff6b6b 100%);
-  color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(220,20,60,0.15);
-  margin-top: 30px;
-  padding: 40px 20px;
-  animation: fadeInUp 0.7s;
-}
-
-.form-success-message .success-icon {
-  font-size: 5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(44,62,80,0.15);
-}
-
-.form-success-message h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-bottom: 12px;
-  letter-spacing: 0.05em;
-}
-
-.form-success-message p {
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.7;
-}
-
-@media (max-width: 600px) {
-  .form-success-message {
-    min-height: 180px;
-    padding: 20px 8px;
-  }
-  .form-success-message .success-icon {
-    font-size: 3rem;
-    margin-bottom: 12px;
-  }
-  .form-success-message h2 {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-  }
-  .form-success-message p {
-    font-size: 1rem;
-  }
-}
 
 /* Footer Section Adjustments */
 #footer {
