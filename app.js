@@ -54,3 +54,4 @@ document.addEventListener('visibilitychange', () => {
 		// Page is hidden, you could pause the slider here if needed
 	}
 });
+
